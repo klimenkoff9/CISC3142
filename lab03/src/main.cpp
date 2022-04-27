@@ -7,7 +7,7 @@ int main()
     int courseNumbers[3] = {1115, 3115, 3130};
     for (int i = 0; i < sizeof(courseNumbers) / sizeof(courseNumbers[0]); i++)
     {
-        read("../data/" + to_string(courseNumbers[i]) + ".csv", records);
+        read("../data/d279545d975c1652689e8195e2426adf/" + to_string(courseNumbers[i]) + ".csv", records);
     }
     passRateByInstructor(records);
     passRateByCourseNumber(records);
