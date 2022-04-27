@@ -1,0 +1,4 @@
+Course Number	Withdrawal Rate
+3130	8.32497%
+3115	11.7188%
+1115	21.7764%
