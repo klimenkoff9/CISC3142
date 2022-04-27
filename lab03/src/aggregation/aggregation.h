@@ -4,7 +4,13 @@
 #include <unordered_map>
 #include <vector>
 #include <string>
+#include <unordered_set>
 
 void passRateByInstructor();
+void passRateByCourseNumber();
+void withdrawalRateByCourse();
+void withdrawalRateByInstructor();
+void springPassRate();
+void fallPassRate();
 
 #endif

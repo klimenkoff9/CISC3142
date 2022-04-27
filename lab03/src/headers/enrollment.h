@@ -2,20 +2,10 @@
 
 using namespace std;
 
-struct record_t
-{
-    string studentID;
-    int curseNo;
-    string instructorID;
-    string termID;
-    string sectionID;
-    string grade;
-};
-
 class Enrollment
 {
 public:
-    Enrollment(string studentID_, int curseNo_, string instructorID_,
+    Enrollment(string studentID_, string curseNo_, string instructorID_,
                string termID_, string sectionID_, string grade_)
         : studentID(studentID_),
           curseNo(curseNo_),
@@ -25,14 +15,14 @@ public:
           grade(grade_) {}
 
     string getStudentID() { return studentID; }
-    int getCurseNo() { return curseNo; }
+    string getCurseNo() { return curseNo; }
     string getInstructorID() { return instructorID; }
     string getTermID() { return termID; }
     string getSectionID() { return sectionID; }
     string getGrade() { return grade; }
 
     void setStudentID(string studentID_) { studentID = studentID_; }
-    void setCurseNo(int curseNo_) { curseNo = curseNo_; }
+    void setCurseNo(string curseNo_) { curseNo = curseNo_; }
     void setInstructorID(string instructorID_) { instructorID = instructorID_; }
     void setTermID(string termID_) { termID = termID_; }
     void setSectionID(string sectionID_) { sectionID = sectionID_; }
@@ -40,7 +30,7 @@ public:
 
 private:
     string studentID;
-    int curseNo;
+    string curseNo;
     string instructorID;
     string termID;
     string sectionID;
