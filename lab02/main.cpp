@@ -71,7 +71,6 @@ int main()
         while (!(cin >> operation) || operation < 1 || operation > 10)
         {
             cin.clear();
-            cin.ignore(numeric_limits<streamsize>::max(), '\n');
             cout << "Invalid input. Please enter a number between 1 and 10: ";
         }
 
@@ -80,7 +79,6 @@ int main()
         while (!(cin >> firstArg))
         {
             cin.clear();
-            cin.ignore(numeric_limits<streamsize>::max(), '\n');
             cout << "Invalid input. Please enter a number: ";
         }
         // don't require second number if square root
@@ -91,7 +89,6 @@ int main()
             while (!(cin >> secondArg))
             {
                 cin.clear();
-                cin.ignore(numeric_limits<streamsize>::max(), '\n');
                 cout << "Invalid input. Please enter a number: ";
             }
         }
